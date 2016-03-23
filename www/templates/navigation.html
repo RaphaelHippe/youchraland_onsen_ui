@@ -1,0 +1,19 @@
+<ons-navigator animation="slide" var="app.navi">
+  <ons-page ng-controller="PageController">
+    <!-- Page content -->
+    <ons-toolbar>
+      <div class="center">YouchraLand | Navigation</div>
+    </ons-toolbar>
+    <div style="text-align: center">
+      <br>
+      <ons-button modifier="light" ng-click="app.navi.pushPage('about.html')">
+        About
+      </ons-button>
+      <br>
+      <br>
+      <ons-button modifier="light" ng-click="app.navi.pushPage('reference.html')">
+        Reference
+      </ons-button>
+    </div>
+  </ons-page>
+</ons-navigator>
