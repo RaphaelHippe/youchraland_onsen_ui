@@ -4,16 +4,16 @@
       <div class="left">
         <ons-back-button>Back</ons-back-button>
       </div>
-      <div class="center">YouchraLand | About</div>
+      <div class="center">YouchraLand | Left or Right?</div>
     </ons-toolbar>
-    <div ng-if="state.state===0" ng-click="tapIt()" class="leftOrRightArea">
-      <ons-icon icon="fa-circle" size="100px"></ons-icon>
+    <div ng-if="state.state===0" ng-click="tapIt()" ng-dblclick="doubleTapIt" class="leftOrRightArea">
+      <ons-icon icon="fa-circle" ng-style="state.clicked" size="200px"></ons-icon>
     </div>
-    <div ng-if="state.state===1" ng-click="tapIt()" class="leftOrRightArea">
-      <ons-icon icon="fa-arrow-circle-left" size="100px"></ons-icon>
+    <div ng-if="state.state===1" ng-click="tapIt()" ng-dblclick="doubleTapIt" class="leftOrRightArea">
+      <ons-icon icon="fa-arrow-circle-left" ng-style="state.clicked" size="200px"></ons-icon>
     </div>
-    <div ng-if="state.state===2" ng-click="tapIt()" class="leftOrRightArea">
-      <ons-icon icon="fa-arrow-circle-right" size="100px"></ons-icon>
+    <div ng-if="state.state===2" ng-click="tapIt()" ng-dblclick="doubleTapIt" class="leftOrRightArea">
+      <ons-icon icon="fa-arrow-circle-right" ng-style="state.clicked" size="200px"></ons-icon>
     </div>
     <div>
       <button class="button button--large" ng-click="app.navi.popPage()" >
