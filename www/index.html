@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="lib/onsen/css/onsenui.css" />
+  <link rel="stylesheet" href="styles/main.css" />
   <link rel="stylesheet" href="lib/onsen/css/onsen-css-components.css" />
   <script src="lib/onsen/js/angular/angular.js"></script>
   <script src="lib/onsen/js/onsenui.js"></script>
@@ -15,15 +16,13 @@
 </head>
 
 <body ng-controller="AppController">
+    <!-- navigator -->
+    <div ng-include="'templates/navigation.html'"></div>
 
-  <!-- navigator -->
-  <div ng-include="'templates/navigation.html'"></div>
-
-  <!-- about template -->
-  <div ng-include="'templates/about.html'"></div>
-  <!-- reference template -->
-  <div ng-include="'templates/reference.html'"></div>
-
+    <!-- about template -->
+    <div ng-include="'templates/about.html'"></div>
+    <!-- reference template -->
+    <div ng-include="'templates/reference.html'"></div>
 </body>
 
 </html>

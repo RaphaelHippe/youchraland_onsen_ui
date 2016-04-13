@@ -4,5 +4,8 @@ module.controller('AppController', function($scope) {});
 module.controller('PageController', function($scope) {
   ons.ready(function() {
     // Init code here
+    $scope.doSomething = function () {
+      console.log('test');
+    };
   });
 });

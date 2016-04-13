@@ -1,6 +1,6 @@
 <ons-template id="reference.html">
 
-  <ons-page>
+  <ons-page class="background">
     <ons-toolbar>
       <div class="left">
         <ons-back-button>Back</ons-back-button>
@@ -10,8 +10,17 @@
     <br>
     <h2>REFERENCE</h2>
     <p>Here I list all the websites I worked on and are worth beeing mentioned.</p>
-    <h2>INTERNSHIPS</h2>
-    <p>
+    <ons-gesture-detector ng-click="doSomething()">
+  <div id="detect-area" style="width: 100px; height: 100px;">
+    Swipe Here
+  </div>
+</ons-gesture-detector>
+    <ons-gesture-detector ng-init="interships=false" ng-swipeleft="doSomething()">
+      <h3 id="detect-area">
+        INTERNSHIPS
+      </h3>
+    </ons-gesture-detector>
+    <p ng-show="interships">
       <b>rentadesigner</b>
       <br><a href="http://praktikum.raphaelhippe.de/" target="_blank">View Result</a>
       <br>
@@ -40,9 +49,12 @@
     <br>
     <div style="text-align: center">
       <br />
-      <ons-button modifier="light" ng-click="app.navi.popPage()">
+      <!-- <ons-button modifier="light" ng-click="app.navi.popPage()">
         Back
-      </ons-button>
+      </ons-button> -->
+      <button class="button button--large" ng-click="app.navi.popPage()" >
+        Back
+      </button>
     </div>
   </ons-page>
 </ons-template>

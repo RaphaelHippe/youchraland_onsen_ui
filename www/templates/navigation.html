@@ -4,16 +4,67 @@
     <ons-toolbar>
       <div class="center">YouchraLand | Navigation</div>
     </ons-toolbar>
-    <div style="text-align: center">
-      <br>
-      <ons-button modifier="light" ng-click="app.navi.pushPage('about.html')">
-        About
-      </ons-button>
-      <br>
-      <br>
-      <ons-button modifier="light" ng-click="app.navi.pushPage('reference.html')">
+
+    <ons-list>
+      <ons-list-header>Use this APP</ons-list-header>
+
+
+      <ons-list-item modifier="chevron" ng-click="app.navi.pushPage('about.html')">
+        <ons-icon icon="fa-cube" size="20px"></ons-icon>
+        About me
+      </ons-list-item>
+
+      <ons-list-item modifier="chevron" ng-click="app.navi.pushPage('reference.html')">
+        <ons-icon icon="fa-archive" size="20px"></ons-icon>
         Reference
-      </ons-button>
-    </div>
+      </ons-list-item>
+
+
+      <ons-list-header>Contact me</ons-list-header>
+
+      <ons-list-item modifier="chevron">
+        <ons-icon icon="fa-skype" size="20px"></ons-icon>
+        Skype
+      </ons-list-item>
+
+      <ons-list-item modifier="chevron">
+        <ons-icon icon="fa-slack" size="20px"></ons-icon>
+        Slack
+      </ons-list-item>
+
+      <ons-list-item modifier="chevron">
+        <ons-icon icon="fa-phone" size="20px"></ons-icon>
+        Phone
+      </ons-list-item>
+
+      <ons-list-header>Other</ons-list-header>
+
+      <ons-list-item modifier="chevron">
+        <ons-icon icon="fa-cog" size="20px"></ons-icon>
+        Settings
+      </ons-list-item>
+
+      <ons-list-item modifier="chevron">
+        <ons-icon icon="fa-minus-circle" size="20px"></ons-icon>
+        Delete All Preferences
+      </ons-list-item>
+
+    </ons-list>
+
+
+
+    <!-- <div style="text-align: center">
+      <br>
+      <button class="button button- -large" ng-click="app.navi.pushPage('about.html')" >
+        About
+      </button>
+      <br>
+      <button class="button button- -large" ng-click="app.navi.pushPage('reference.html')" >
+        Reference
+      </button>
+    </div> -->
+
+
+
   </ons-page>
 </ons-navigator>
